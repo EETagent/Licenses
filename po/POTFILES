@@ -1,0 +1,5 @@
+data/com.github.eetagent.licenses.desktop.in
+data/com.github.eetagent.licenses.appdata.xml.in
+data/com.github.eetagent.licenses.gschema.xml
+src/Widgets/Window.vala
+

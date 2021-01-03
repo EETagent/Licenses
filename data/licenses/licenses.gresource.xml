@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/com/github/eetagent/Licenses">
+    <file compressed="true">AFL-3.0.txt</file>
+    <file compressed="true">AGPL-3.0.txt</file>
+    <file compressed="true">Apache-2.0.txt</file>
+    <file compressed="true">Astistic-2.0.txt</file>
+    <file compressed="true">BSD-2-CLAUSE.txt</file>
+    <file compressed="true">BSD-3-CLAUSE.txt</file>
+    <file compressed="true">BSD-4-CLAUSE.txt</file>
+    <file compressed="true">BSL-1.0.txt</file>
+    <file compressed="true">CC-BY-SA-4.0.txt</file>
+    <file compressed="true">CC-BY-4.0.txt</file>
+    <file compressed="true">CC0-1.0.txt</file>
+    <file compressed="true">CeCILL-2.1.txt</file>
+    <file compressed="true">ECL-2.0.txt</file>
+    <file compressed="true">EPL-1.0.txt</file>
+    <file compressed="true">EPL-2.0.txt</file>
+    <file compressed="true">EUPL-1.1.txt</file>
+    <file compressed="true">EUPL-1.2.txt</file>
+    <file compressed="true">GPL-2.0.txt</file>
+    <file compressed="true">GPL-3.0.txt</file>
+    <file compressed="true">ISC.txt</file>
+    <file compressed="true">LGPL-2.1.txt</file>
+    <file compressed="true">LGPL-3.0.txt</file>
+    <file compressed="true">LPPL-1.3C.txt</file>
+    <file compressed="true">MIT.txt</file>
+    <file compressed="true">MPL-2.0.txt</file>
+    <file compressed="true">MS-PL.txt</file>
+    <file compressed="true">MS-RL.txt</file>
+    <file compressed="true">NCSA.txt</file>
+    <file compressed="true">ODBL-1.0.txt</file>
+    <file compressed="true">OFL-1.1.txt</file>
+    <file compressed="true">OSL-3.0.txt</file>
+    <file compressed="true">PostgreSQL.txt</file>
+    <file compressed="true">Unlicense.txt</file>
+    <file compressed="true">UPL-1.0.txt</file>
+    <file compressed="true">VIM.txt</file>
+    <file compressed="true">WTFPL.txt</file>
+    <file compressed="true">ZLIB.txt</file>
+    <file compressed="true">0BSD.txt</file>
+  </gresource>
+</gresources>

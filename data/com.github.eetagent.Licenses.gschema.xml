@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="Licenses">
+	<schema id="com.github.eetagent.Licenses" path="/com/github/eetagent/Licenses/">
+		<key type="b" name="dark-theme">
+		<default>false</default>
+		<summary>Use dark GTK+ theme</summary>
+		<description>Use the dark variant of your GTK+ theme. Please note that not every GTK+ theme has a dark variant.</description>
+		</key>
+		<key type="i" name="window-width">
+		<default>625</default>
+		<summary>Window width</summary>
+		<description>Remember the window width.</description>
+		</key>
+		<key type="i" name="window-height">
+		<default>700</default>
+		<summary>Window height</summary>
+		<description>Remember the window height.</description>
+		</key>
+	</schema>
+</schemalist>

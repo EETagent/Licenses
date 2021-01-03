@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Licenses
+Comment=Simple Vala learning project. An application that displays a list of FOSS licenses
+Exec=com.github.eetagent.Licenses
+Terminal=false
+Type=Application
+Icon=com.github.eetagent.Licenses
+Categories=GTK;Demo;
+StartupNotify=true
