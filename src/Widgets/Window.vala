@@ -56,8 +56,32 @@ namespace Licenses {
 
             var titlebar = new Gtk.HeaderBar ();
 
+            /**
+             * Create title and subtitle
+             */
+
+             var titlebar_title_widget = new Gtk.Box (VERTICAL, 0);
+             titlebar_title_widget.set_valign (CENTER);
+             var title_label = new Gtk.Label ("Licenses");
+             title_label.add_css_class ("title");
+             var subtitle_label = new Gtk.Label ("Choose and copy your favourite FOSS license");
+             subtitle_label.add_css_class ("subtitle");
+             
+             titlebar_title_widget.append (title_label);
+             titlebar_title_widget.append (subtitle_label);
+ 
+             titlebar.set_title_widget (titlebar_title_widget);
+
+            /**
+             * Create copy and FAQ buttons
+             */
+
             var copy_button = new Gtk.Button.from_icon_name ("edit-copy-symbolic");
             var faq_button = new Gtk.Button.from_icon_name ("help-faq-symbolic");
+
+            /**
+             * Create dark mode switch
+             */
 
             var mode_switch = new Granite.ModeSwitch.from_icon_name ("display-brightness-symbolic", "weather-clear-night-symbolic");
             mode_switch.primary_icon_tooltip_text = "Light background";
@@ -72,7 +96,6 @@ namespace Licenses {
             titlebar.pack_end (mode_switch);
             
             this.set_titlebar (titlebar);
-            this.set_title ("Licenses");
 
             /**
              * HeaderBar END
