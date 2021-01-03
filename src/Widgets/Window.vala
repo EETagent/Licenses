@@ -2,25 +2,20 @@ namespace Licenses {
 
     public class Window : Gtk.ApplicationWindow {
 
-        private GLib.Settings saved_settings = new GLib.Settings ("com.github.eetagent.Licenses");
+        private GLib.Settings settings = new GLib.Settings ("com.github.eetagent.Licenses");
 
         private Licenses.License license;
 
         private Gdk.Clipboard clipboard;
 
-        private Granite.ModeSwitch mode_switch;
-
         private Gtk.Stack main_stack;
 
         private Licenses.TextView last_text_view;
 
-
         private bool faq_bool = false;
-
 
         public Window (Gtk.Application app) {
             Object (application: app);
-
         }
 
         construct {
@@ -29,7 +24,7 @@ namespace Licenses {
              * Load window size from Gschema
              */
 
-            this.set_default_size (this.saved_settings.get_int ("window-width"), this.saved_settings.get_int ("window-height"));
+            this.set_default_size (this.settings.get_int ("window-width"), this.settings.get_int ("window-height"));
 
             /**
              * Import Gtk.Settings for dark mode functionality
@@ -87,8 +82,7 @@ namespace Licenses {
             mode_switch.primary_icon_tooltip_text = "Light background";
             mode_switch.secondary_icon_tooltip_text = "Dark background";
             mode_switch.bind_property ("active", gtk_settings, "gtk_application_prefer_dark_theme");
-            mode_switch.active = this.saved_settings.get_boolean("dark-theme");
-            this.mode_switch = mode_switch;
+            settings.bind("dark-theme", mode_switch, "active", GET_NO_CHANGES );
 
             titlebar.pack_start (copy_button);
             titlebar.pack_start (faq_button);
@@ -161,11 +155,9 @@ namespace Licenses {
 
         public bool before_window_close() {
             int width, height;
-            bool dark_mode = mode_switch.active;
             get_default_size(out width, out height);
-            saved_settings.set_int("window-width", width);
-            saved_settings.set_int("window-height", height);
-            saved_settings.set_boolean("dark-theme", dark_mode);
+            settings.set_int("window-width", width);
+            settings.set_int("window-height", height);
             return false;
         }
 

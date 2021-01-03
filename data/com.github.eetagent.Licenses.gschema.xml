@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schemalist gettext-domain="Licenses">
+<schemalist gettext-domain="com.github.eetagent.Licenses">
 	<schema id="com.github.eetagent.Licenses" path="/com/github/eetagent/Licenses/">
 		<key type="b" name="dark-theme">
 		<default>false</default>
