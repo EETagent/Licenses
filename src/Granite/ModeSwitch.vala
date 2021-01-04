@@ -33,7 +33,7 @@
 
  /** 
   * Modified for GTK 4
-  */ 
+  */
 
 public class Granite.ModeSwitch : Gtk.Grid {
     /**
@@ -111,9 +111,9 @@ public class Granite.ModeSwitch : Gtk.Grid {
         secondary_icon.pixel_size = 16;
 
         column_spacing = 6;
-        attach(primary_image, 1, 1, 1, 1);
-        attach(mode_switch, 2, 1, 1, 1);
-        attach(secondary_icon, 3, 1, 1, 1);
+        attach (primary_image, 1, 1, 1, 1);
+        attach (mode_switch, 2, 1, 1, 1);
+        attach (secondary_icon, 3, 1, 1, 1);
 
 
         bind_property ("primary-icon-gicon", primary_image, "gicon", GLib.BindingFlags.SYNC_CREATE);

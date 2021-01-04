@@ -3,6 +3,7 @@ licenses_sources = [
   'Licenses.vala',
   'Widgets/Window.vala',
   'Widgets/TextView.vala',
+  'Widgets/PreferencesDialog.vala',
   'Granite/ModeSwitch.vala',
   app_licenses_txt_resources,
 

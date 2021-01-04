@@ -7,14 +7,30 @@
 		<description>Use the dark variant of your GTK+ theme. Please note that not every GTK+ theme has a dark variant.</description>
 		</key>
 		<key type="i" name="window-width">
-		<default>625</default>
+		<default>680</default>
 		<summary>Window width</summary>
 		<description>Remember the window width.</description>
 		</key>
 		<key type="i" name="window-height">
-		<default>700</default>
+		<default>720</default>
 		<summary>Window height</summary>
 		<description>Remember the window height.</description>
+		</key>
+
+		<key type="s" name="year">
+		<default>"[year]"</default>
+		<summary>Year written in license</summary>
+		<description>Overwrites [year] string in license text</description>
+		</key>
+		<key type="s" name="fullname">
+		<default>"[fullname]"</default>
+		<summary>Name written in license</summary>
+		<description>Overwrites [fullname] string in license text</description>
+		</key>
+		<key type="s" name="email">
+		<default>"[e-mail]"</default>
+		<summary>E-mail written in license</summary>
+		<description>Overwrites [e-mail] string in license text</description>
 		</key>
 	</schema>
 </schemalist>

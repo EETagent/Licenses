@@ -3,7 +3,7 @@ namespace Licenses {
     public class TextView : Gtk.TextView {
 
         public TextView (string content) {
-            this.set_text(content);
+            this.set_text (content);
         }
 
         public void set_text (string content) {
@@ -13,9 +13,9 @@ namespace Licenses {
         construct {
 
             /**
-            * Some text formatting
-            */
- 
+             * Some text formatting
+             */
+
             set_editable (false);
 
             set_pixels_above_lines (5);
@@ -26,9 +26,6 @@ namespace Licenses {
             set_left_margin (25);
 
             set_wrap_mode (WORD);
-
         }
-        
     }
-
 }

@@ -3,7 +3,31 @@
 	<id>com.github.eetagent.Licenses.desktop</id>
 	<metadata_license>CC0-1.0</metadata_license>
 	<project_license>GPL-3.0-or-later</project_license>
+    <developer_name>EETagent</developer_name>
+    <url type="homepage">https://github.com/EETagent/Licenses</url>
+    <url type="bugtracker">https://github.com/EETagent/Licenses/issues</url>
+    <launchable type="desktop-id">com.github.eetagent.Licenses.desktop</launchable>
+    <translation type="gettext">com.github.eetagent.Licenses</translation>
+	<name>Licenses</name>
+	<summary>FOSS licenses app</summary>
 	<description>
-	Simple Vala learning project. An application that displays a list of FOSS licenses
+		<p>Simple Vala learning project. An application that displays a list of FOSS licenses</p>
 	</description>
+	
+	<screenshots>
+		<screenshot type="default">
+		<image width="732" height="752">https://raw.githubusercontent.com/EETagent/Licenses/master/data/Screenshot.png?raw=true</image>
+		<caption>Licenses screenshot</caption>
+		</screenshot>
+	</screenshots>
+
+	<releases>
+		<release version="0.9.0" date="2021-01-04">
+			<description>
+				<p>Licenses 0.9.0 is the initial release version of the application</p>
+			</description>
+		</release>
+	</releases>
+
+	<content_rating type="oars-1.0" />
 </component>
