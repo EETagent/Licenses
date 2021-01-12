@@ -8,6 +8,8 @@ namespace Licenses {
 
         private Gdk.Clipboard clipboard;
 
+        private Gtk.Paned paned;
+
         private Gtk.Stack main_stack;
 
         private Licenses.TextView last_text_view;
@@ -135,7 +137,8 @@ namespace Licenses {
             var paned = new Gtk.Paned (Gtk.Orientation.HORIZONTAL);
             paned.set_start_child (stack_sidebar);
             paned.set_end_child (main_stack);
-            paned.set_position (135);
+            paned.set_position (this.settings.get_int ("paned-position"));
+            this.paned = paned;
 
             this.main_stack = main_stack;
 
@@ -167,6 +170,7 @@ namespace Licenses {
             get_default_size (out width, out height);
             settings.set_int ("window-width", width);
             settings.set_int ("window-height", height);
+            settings.set_int ("paned-position", paned.get_position ());
             return false;
         }
 
